@@ -1,0 +1,9 @@
+/* font-family: 'Comfortaa', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Space Mono', monospace; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+body{
+    font-family: 'Comfortaa', cursive;
+}

@@ -1,0 +1,21 @@
+html{
+    font-size: 10px;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    font-size: 1.6rem;
+    background: #8360c3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8360c3, #2ebf91); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8360c3, #2ebf91); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,79 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.home .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;    
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 400px;
+    min-height: 400px;
+    width: 30%;
+    height: 70%;
+    padding: 5%;
+    margin: 0 auto;
+    /* border-radius: 1.5em;
+    box-shadow: 1px 1px 100px 20px rgb(24, 29, 46);
+    background-color: white; */
+}
+.home .form .title{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.home .form > label{
+    margin-bottom: 1em;
+}
+
+.home .form > label > input{
+    float: right;
+    
+}
+
+.home .form .radio_buttons{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+}
+
+.home .form > a{
+    margin: 0 auto;
+    width: 80%;
+    height: 15%;
+    border:none;
+} 
+
+.create_btn, .history_btn, .join_btn{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font: inherit;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    transition: color 1s;
+    color:black;
+}
+    
+.history_btn:hover, .join_btn:hover, .create_btn:hover {
+    animation: stripes-move 0.75s infinite linear;
+    background: repeating-linear-gradient(45deg, var(--color-start-button) 0, var(--color-start-button) 0.25em, transparent 0.25em, transparent .5em);
+    color: adjust-hue(var(--color-start-button),180);
+}
+  
+  
+@keyframes stripes-move {
+    100% {
+        background-position: 5em 0px;
+    }
+}
+  

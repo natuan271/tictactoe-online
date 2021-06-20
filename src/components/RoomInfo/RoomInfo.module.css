@@ -1,0 +1,57 @@
+.turn_active{
+    background-color: #aeece4;
+}
+
+.room_info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 550px;
+    width: 20%;
+    min-width: 250px;
+    background-color: rgba(245, 245, 245, 0.596);
+    padding: 3% 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 10px rgba(24, 29, 46, 0.37);
+}
+.room_info .title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.room_info .player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.surrender_btn{
+    background: none;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font: inherit;
+    letter-spacing: inherit;
+    margin: 1em;
+    text-transform: inherit;
+    transition: color 1s;
+    cursor: pointer;
+    background: var(--color-sub-button);
+	border-radius: 2px;
+	padding: 12px 30px;
+    color: black;
+}
+
+.surrender_btn:hover {
+    animation: blinds 0.75s linear forwards;
+    background: linear-gradient(0deg, #7cf07f 25%, transparent 25%) 0 0 / 0.5em 0.5em, linear-gradient(0deg, #88d6f3 50%, transparent 50%) 0 0 / 1em 1em;
+    color: #f07ced;
+}
+@keyframes blinds {
+    100% {
+        background-position: 0 0, 0 -3em;
+        background-size: 0 0, 1em 6em;
+   }
+}

@@ -1,0 +1,14 @@
+.board_game{    
+    display: grid;
+    width: 550px;
+    height: 550px;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+}
+
+.board_game .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
